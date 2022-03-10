@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutUsPageModule } from './pages/about-us.page-module';
+import { CharactersPageModule } from './pages/characters.page-module';
 import { HomePage } from './pages/home.page';
 import { HomePageModule } from './pages/home.page-module';
 import { KontaktPageModule } from './pages/kontakt.page-module';
+import { CharactersDetailsPageModule } from './pages/characters-details.page-module';
 
 const routes: Routes = [{ 
         path: 'about-us', 
@@ -16,6 +18,14 @@ const routes: Routes = [{
   { 
         path: 'kontakt', 
         loadChildren: () => KontaktPageModule
+      },
+      { 
+        path: 'postacie', 
+        loadChildren: () => CharactersPageModule
+      },
+  { 
+        path: 'postacie/:name', 
+        loadChildren: () => CharactersDetailsPageModule
       }
 ];
 
