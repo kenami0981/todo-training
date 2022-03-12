@@ -7,6 +7,10 @@
       "characters": [
         "dist/characters/characters",
         "dist/characters"
+      ],
+      "team": [
+        "dist/team/team",
+        "dist/team"
       ]
     },
     "outDir": "./dist/out-tsc",
