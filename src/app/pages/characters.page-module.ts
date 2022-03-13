@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { CharactersPage } from './characters.page';
+import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
 
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
@@ -9,7 +10,9 @@ import { CharactersPage } from './characters.page';
           path: '',
           component: CharactersPage,
         }
-      ])],
+      ]),
+  OurTeamComponentModule
+],
   	declarations: [CharactersPage],
   	providers: [],
   	exports: [] })
