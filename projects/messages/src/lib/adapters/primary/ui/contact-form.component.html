@@ -1,1 +1,1 @@
-<h2>Hello! Contact us!</h2>
+<form [formGroup]="messageForm" (ngSubmit)="onFormSubmited(messageForm)"><input type="text" formControlName="email" placeholder="Email"><input type="text" formControlName="text" placeholder="Text"><input type="submit" value="Submit"></form>
