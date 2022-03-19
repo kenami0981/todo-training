@@ -4,18 +4,16 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "characters": [
-        "dist/characters/characters",
-        "dist/characters"
-      ],
       "messages": [
         "dist/messages/messages",
         "dist/messages"
       ],
+      "@messages": ["projects/messages/src/public-api.ts"],
       "team": [
         "dist/team/team",
         "dist/team"
-      ]
+      ],
+      "@team": ["projects/team/src/public-api.ts"],
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
