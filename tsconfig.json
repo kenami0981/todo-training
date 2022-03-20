@@ -13,6 +13,10 @@
         "dist/team/team",
         "dist/team"
       ],
+      "navigation": [
+        "dist/navigation/navigation",
+        "dist/navigation"
+      ],
       "@team": ["projects/team/src/public-api.ts"],
     },
     "outDir": "./dist/out-tsc",
