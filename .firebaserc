@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "todo-training-66823": {
+      "hosting": {
+        "todo-training": [
+          "todo-training-66823"
+        ]
+      }
+    }
+  }
+}
