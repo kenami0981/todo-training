@@ -12,7 +12,7 @@ export class OurTeamComponent {
             bio:'Okabe is a self-proclaimed mad scientist who often goes by the pseudonym Hououin Kyouma. He is the founder of what he calls the "Future Gadget Laboratory" in Akihabara, where he spends most of his time and has dubbed himself Lab Member No. 001 (as he is the first person to join).',
             department: [
                 {
-                    depname: "Frjvyuqa",
+                    depname: "Future Gadget Lab",
                     characterCount: 1
                 }
             ]
@@ -24,7 +24,7 @@ export class OurTeamComponent {
             bio:'Mayuri is very perceptive, often being surprisingly quick to catch things no one else notices, and being good at understanding how others feel.',
             department: [
                 {
-                    depname: "Frjvyuqa",
+                    depname: "Future Gadget Lab",
                     characterCount: 2
                 }
             ]
@@ -36,7 +36,7 @@ export class OurTeamComponent {
             bio:'Kurisu is generally a sensible, serious mature young woman, usually calm and collected even when someone is acting tense in front of her. However, she can also show a much more timid side at times.',
             department: [
                 {
-                    depname: "Frjvyuqa",
+                    depname: "Future Gadget Lab",
                     characterCount: 3
                 }
             ]
