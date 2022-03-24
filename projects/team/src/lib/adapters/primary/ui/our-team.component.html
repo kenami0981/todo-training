@@ -4,7 +4,7 @@
         <div class="col mb-4" *ngFor="let character of characters$ | async">
     
         <div class="col" >
-         <div class="card h-100" >
+         <div class="card" >
             <a href="../postacie/Okabe Rintoro" style="text-decoration: inherit;
         color: inherit;"><img [src]="character.imageUrl" class="card-img-top" [alt]="character.name"></a>
             <div class="card-body">
@@ -12,8 +12,8 @@
             <p class="card-text text-center">{{ character.bio }}</p>
             </div>
             <div class="card-footer">
-             <small class="text-muted">Lab mem {{ character.department[0].characterCount }}</small><br>
-             <small class="text-muted">Dapartment: {{ character.department[0].depname }}</small>
+             <small class="text-muted">Lab mem {{ character.characterCount }}</small><br>
+             <small class="text-muted">Dapartment: {{ character.department }}</small>
             </div>
         </div>
         </div></div></div>

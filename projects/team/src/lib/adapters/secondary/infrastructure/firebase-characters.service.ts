@@ -12,6 +12,6 @@ export class FirebaseCharactersService implements GetsAllCharactersDtoPort {
   }
 
   getAll(criterion: CharactersDTO): Observable<CharactersDTO[]> {
-    return this._client.collection<CharactersDTO>('characters').valueChanges(({idField: 'id'})).pipe(map((data: CharactersDTO[]) => filterByCriterion(data, criterion)));
+    return this._client.collection<CharactersDTO>('characters-list').valueChanges(({idField: 'id'})).pipe(map((data: CharactersDTO[]) => filterByCriterion(data, criterion)));
   }
 }
