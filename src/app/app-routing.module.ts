@@ -24,7 +24,7 @@ const routes: Routes = [{
         loadChildren: () => CharactersPageModule
       },
   { 
-        path: 'postacie/:name', 
+        path: 'postacie/:characterId', 
         loadChildren: () => CharactersDetailsPageModule
       }
 ];
