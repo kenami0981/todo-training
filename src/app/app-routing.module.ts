@@ -6,6 +6,7 @@ import { HomePage } from './pages/home.page';
 import { HomePageModule } from './pages/home.page-module';
 import { KontaktPageModule } from './pages/kontakt.page-module';
 import { CharactersDetailsPageModule } from './pages/characters-details.page-module';
+import { AdminPageModule } from './pages/admin.page-module';
 
 const routes: Routes = [{ 
         path: 'about-us', 
@@ -26,6 +27,10 @@ const routes: Routes = [{
   { 
         path: 'postacie/:characterId', 
         loadChildren: () => CharactersDetailsPageModule
+      },
+  { 
+        path: 'admin', 
+        loadChildren: () => AdminPageModule
       }
 ];
 
