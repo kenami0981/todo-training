@@ -6,7 +6,7 @@ import { GETS_ONE_CHARACTERS_DTO, GetsOneCharactersDtoPort } from '../../../appl
 
 @Component({ selector: 'lib-characters-details', templateUrl: './characters-details.component.html', encapsulation: ViewEncapsulation.None, changeDetection: ChangeDetectionStrategy.OnPush })
 export class CharactersDetailsComponent {
-  character$: Observable<CharactersDTO> = this._getsOneCharactersDto.getOne('eFHB03bMON8rn0VDTYsl');
+  character$: Observable<CharactersDTO> = this._getsOneCharactersDto.getOne(this._activatedRoute.snapshot.params.name);
   constructor(
     @Inject(GETS_ONE_CHARACTERS_DTO) 
     private _getsOneCharactersDto: GetsOneCharactersDtoPort,

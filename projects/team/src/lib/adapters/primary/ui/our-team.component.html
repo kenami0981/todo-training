@@ -4,7 +4,7 @@
         <div class="col mb-4" *ngFor="let character of characters$ | async">
     
         <div class="col" >
-         <div class="card" [routerLink]="'/postacie/'+character.name" >
+         <div class="card" [routerLink]="'/postacie/'+character.id" >
            <img [src]="character.imageUrl" class="card-img-top" [alt]="character.name">
             <div class="card-body">
             <h5 class="card-title fs-2 font-monospace text-center font-monospace ">{{ character.name }}</h5>
