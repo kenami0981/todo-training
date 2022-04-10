@@ -5,5 +5,6 @@ export interface CharactersDTO {
   readonly name: string;
   readonly imageUrl: string;
   readonly bio: string;
+  readonly bioExtended: string;
   readonly department: DepartmentDTO[];
 }

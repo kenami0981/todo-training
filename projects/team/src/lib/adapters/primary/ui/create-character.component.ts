@@ -13,6 +13,7 @@ export class CreateCharacterComponent {
   readonly createCharacter: FormGroup = new FormGroup({
     name: new FormControl(), 
     bio: new FormControl(), 
+    bioExtended: new FormControl(),
     imageUrl: new FormControl()});
 
   constructor(@Inject(ADDS_CHARACTERS_DTO) private _addsCharactersDto: AddsCharactersDtoPort) {
@@ -25,6 +26,7 @@ export class CreateCharacterComponent {
     this._addsCharactersDto.add({
       name: createCharacter.get('name').value,
       bio: createCharacter.get('bio').value,
+      bioExtended: createCharacter.get('bioExtended').value,
       imageUrl: createCharacter.get('imageUrl').value,
     });
     this.createCharacter.reset();

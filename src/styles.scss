@@ -5,3 +5,16 @@
 
 /* Importing Datepicker SCSS file. */
 @import "~ngx-bootstrap/datepicker/bs-datepicker";
+
+.character_temp {
+    width: 350px;
+}
+.frame {
+    border: 2px solid black;
+}
+.container_character {
+    background-color: #2F3336;
+}
+.color_white {
+    color: #efefef;
+}

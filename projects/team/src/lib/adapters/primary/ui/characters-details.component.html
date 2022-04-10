@@ -1,1 +1,46 @@
-{{character$ | async | json}}
+<head>
+    
+</head>
+<div class="container_character mt-3 p-3">
+    <div class="row">
+        <div class="col-sm-12 text-center mb-3">
+            <h1 style="color: #ADD8E6;">{{(character$ | async).name}}</h1>
+        </div>					
+        <div class="col-sm-12 col-md-5 offset-md-1 character_temp color_white">
+            
+            <figure><div class="text-center">
+                <img style="width:250px" [src]="(character$ | async).imageUrl" [alt]="(character$ | async).name"></div>
+                <figcaption class="text-center">{{(character$ | async).bio}}</figcaption>
+            </figure>
+            
+        </div>
+            
+        <div class="col-sm-12 col-md-5 color_white text-center">
+            
+            {{(character$ | async).bioExtended}}
+            
+        </div>
+        <div class="col-sm-12 text-center mb-3">
+            <h1 style="color: #ADD8E6;">BASIC INFORMATION:</h1>
+        </div>	
+      <div class="row color_white mt-3">
+        <div class="col-md-4 col-sm-6 offset-md-1"> 
+            <h2 style="color: #ADD8E6;">DEPARTMENT:</h2>
+        </div>
+        <div class="col-md-7 col-sm-6">
+            <span class="fs-3">{{(character$ | async).department.name}}</span>
+        </div>
+    </div>
+    <div class="row color_white mt-3">
+        <div class="col-md-4 col-sm-6 offset-md-1"> 
+            <h2 style="color: #ADD8E6;">LAB MEMBER:</h2>
+        </div>
+        <div class="col-md-7 col-sm-6">
+            <span class="fs-3">{{(character$ | async).department.characterCount}}</span>
+            
+        </div>
+    </div>
+    
+    
+    </div>
+</div>
