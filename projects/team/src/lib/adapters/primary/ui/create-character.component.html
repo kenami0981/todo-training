@@ -1,7 +1,15 @@
 <form [formGroup]="createCharacter" (ngSubmit)='onCreateCharacterSubmited(createCharacter)'>
-    <input type="text" formControlName="name" placeholder="Name">
-    <input type="text" formControlName="bio" placeholder="Bio">
-    <input type="text" formControlName="bioExtended" placeholder="BioExtended">
-    <input type="text" formControlName="imageUrl" placeholder="Image Url">
-    <input type="submit" value="Submit">
+    
+    
+    <div id="formularz">
+        <div class="names_of_inputs">Name:</div>
+        <input class="inputs" type="text" formControlName="name" placeholder="Name">
+        <div class="names_of_inputs">Bio:</div>
+        <input class="inputs" type="text" formControlName="bio" placeholder="Bio">
+        <div class="names_of_inputs">Bio Extended:</div>
+        <input class="inputs" type="text" formControlName="bioExtended" placeholder="BioExtended">
+        <div class="names_of_inputs">Image Url:</div>
+        <input class="inputs" type="text" formControlName="imageUrl" placeholder="Image Url"><br>
+        <input class="mt-3" id="wyslij" type="submit" value="Submit">
+    </div>   
 </form>

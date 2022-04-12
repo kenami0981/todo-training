@@ -13,11 +13,13 @@ export class ContactFormComponent {
   }
 
   onMessageFormSubmited(messageForm: FormGroup): void {
+    
     this._addsMessagesDto.add({
       email: messageForm.get('email').value,
       text: messageForm.get('text').value
     });
     messageForm.reset();
+    alert("Your message has been sent")
   }
 }
  

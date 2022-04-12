@@ -1,5 +1,10 @@
+<h1 id="h1-form">CONTACT FORM</h1>
 <form [formGroup]="messageForm" (ngSubmit)="onMessageFormSubmited(messageForm)">
-    <input type="text" formControlName="email" placeholder="Email">
-    <input type="text" formControlName="text" placeholder="Text">
-    <input type="submit" value="Submit">
+        <div id="formularz">
+            <div class="names_of_inputs">E-mail:</div>
+            <input class="inputs" type="text" formControlName="email" placeholder="Email">
+            <div class="names_of_inputs">Teść wiadomości:</div>
+            <textarea id="tresc" type="text" rows="2" cols="40" formControlName="text" placeholder="Text"></textarea><br>
+            <input id="wyslij" type="submit" value="Submit">
+        </div>   
 </form>

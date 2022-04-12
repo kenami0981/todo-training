@@ -14,7 +14,33 @@
 }
 .container_character {
     background-color: #2F3336;
+    border-radius: 15px;
 }
 .color_white {
     color: #efefef;
+}
+#h1-form {
+    margin: 30px;
+    color: gray;
+    font-size: 28px;
+}
+#formularz {
+    width: 800px;
+    height: auto;
+    border: solid black 3px;
+    border-radius: 15px;
+    padding: 50px;
+}
+.names_of_inputs {
+    margin-left: 5px;
+    margin-top: 8px;
+    font-size: 22px;
+}
+.inputs {
+    width: 300px;
+}
+#tresc {
+    width: 400px;
+    height: 100px;
+    max-width: 800px;
 }
