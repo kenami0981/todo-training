@@ -2,4 +2,5 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/
 
 @Component({ selector: 'lib-about-us-page', templateUrl: './about-us.page.html', encapsulation: ViewEncapsulation.None, changeDetection: ChangeDetectionStrategy.OnPush })
 export class AboutUsPage {
+
 }

@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { CharactersPage } from './characters.page';
 import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
 import { FirebaseCharactersServiceModule } from '../../../projects/team/src/lib/adapters/secondary/infrastructure/firebase-characters.service-module';
+import { CharactersDetailsComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/characters-details.component-module';
 
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
@@ -13,7 +14,8 @@ import { FirebaseCharactersServiceModule } from '../../../projects/team/src/lib/
         }
       ]),
   OurTeamComponentModule,
-  FirebaseCharactersServiceModule
+  FirebaseCharactersServiceModule,
+  CharactersDetailsComponentModule
 ],
   	declarations: [CharactersPage],
   	providers: [],

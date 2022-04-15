@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AboutUsPage } from './about-us.page';
 import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
 import { FirebaseCharactersServiceModule } from '../../../projects/team/src/lib/adapters/secondary/infrastructure/firebase-characters.service-module';
+import { CharactersDetailsComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/characters-details.component-module';
 
 @NgModule({ 
   imports: [CommonModule, 
@@ -15,6 +16,7 @@ import { FirebaseCharactersServiceModule } from '../../../projects/team/src/lib/
         }
       ]),
   OurTeamComponentModule,
+    CharactersDetailsComponentModule,
   ],
   	declarations: [AboutUsPage],
   	providers: [],
