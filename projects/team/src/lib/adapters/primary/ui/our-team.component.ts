@@ -15,16 +15,22 @@ export class OurTeamComponent {
     private _getsAllCharactersDto: GetsAllCharactersDtoPort, @Inject(CONTEXT_DTO_STORAGE) private _contextDtoStorage: ContextDtoStoragePort,
     private router: Router)  {}
   onCharacterClicked(character): void {
-    var x = document.getElementById('test');if (x.style.display==='none') {x.style.display='block';
-  };
+    
     this._contextDtoStorage.next({characterId: character.id});
     
     var paths = this.router.url.split('#')[0];
+    if(paths=="/home") {
+      window.location.href="/postacie";};
+      
+
+
     if (this.router.url==paths+"#characters-details"){
-      window.location.href=paths+"#characters-details"
-    }
+      window.location.href=paths+"#characters-details";
+      var x = document.getElementById('test');if (x.style.display==='none') {x.style.display='block';};}
     else {
-      window.location.href=paths+"#characters-details"
+      window.location.href=paths+"#characters-details";
+      var x = document.getElementById('test');if (x.style.display==='none') {x.style.display='block';
+  };
     }
 
     
