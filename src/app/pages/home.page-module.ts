@@ -13,7 +13,7 @@ import { FirebaseCharactersServiceModule } from '../../../projects/team/src/lib/
         }
       ]),
   OurTeamComponentModule,
-  FirebaseCharactersServiceModule
+  FirebaseCharactersServiceModule,
 ],
   	declarations: [HomePage],
   	providers: [],

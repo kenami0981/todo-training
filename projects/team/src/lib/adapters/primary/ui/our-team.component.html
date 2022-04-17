@@ -1,12 +1,12 @@
-<body onload="var x = document.getElementById('test');if (x.style.display==='none') {x.style.display='block';
+<!-- <body onload="var x = document.getElementById('test');if (x.style.display==='none') {x.style.display='block';
 }
-else {x.style.display='none'}"><div class="bg-dark justify-content-center my-3">.</div>
+else {x.style.display='none'}"><div class="bg-dark justify-content-center my-3">.</div> -->
 <div style="margin-top: 40px; margin-bottom: 40px;;" class="container" >
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col mb-4" *ngFor="let character of characters$ | async">
     
         <div class="col">
-         <div style="cursor: pointer" class="card" (click)="onCharacterClicked(character)">
+         <div style="cursor: pointer" class="card" [routerLink]='"/postacie/"+character.id' (click)="onCharacterClicked(character)">
            <img [src]="character.imageUrl" class="card-img-top" [alt]="character.name">
             <div class="card-body">
             <h5 class="card-title fs-2 font-monospace text-center font-monospace ">{{ character.name }}</h5>
@@ -19,4 +19,5 @@ else {x.style.display='none'}"><div class="bg-dark justify-content-center my-3">
         </div>
         </div>
 </div></div></div>
-<div class="bg-dark justify-content-center">.</div></body>
+<div class="bg-dark justify-content-center">.</div>
+<!-- </body> -->

@@ -18,20 +18,20 @@ export class OurTeamComponent {
     
     this._contextDtoStorage.next({characterId: character.id});
     
-    var paths = this.router.url.split('#')[0];
-    if(paths=="/home") {
-      window.location.href="/postacie";};
+  //   var paths = this.router.url.split('#')[0];
+  //   if(paths=="/home") {
+  //     window.location.href="/postacie";};
       
 
 
-    if (this.router.url==paths+"#characters-details"){
-      window.location.href=paths+"#characters-details";
-      var x = document.getElementById('test');if (x.style.display==='none') {x.style.display='block';};}
-    else {
-      window.location.href=paths+"#characters-details";
-      var x = document.getElementById('test');if (x.style.display==='none') {x.style.display='block';
-  };
-    }
+  //   if (this.router.url==paths+"#characters-details"){
+  //     window.location.href=paths+"#characters-details";
+  //     var x = document.getElementById('test');if (x.style.display==='none') {x.style.display='block';};}
+  //   else {
+  //     window.location.href=paths+"#characters-details";
+  //     var x = document.getElementById('test');if (x.style.display==='none') {x.style.display='block';
+  // };
+  //   }
 
     
   }
