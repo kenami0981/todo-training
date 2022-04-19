@@ -5,6 +5,8 @@ import { AboutUsPage } from './about-us.page';
 import { OurTeamComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/our-team.component-module';
 import { FirebaseCharactersServiceModule } from '../../../projects/team/src/lib/adapters/secondary/infrastructure/firebase-characters.service-module';
 import { CharactersDetailsComponentModule } from '../../../projects/team/src/lib/adapters/primary/ui/characters-details.component-module';
+import { CharacterIdResolverModule } from 'projects/team/src/lib/adapters/primary/ui/character-id.resolver-module';
+import { CharactersDetailsPageModule } from './characters-details.page-module';
 
 @NgModule({ 
   imports: [CommonModule, 
@@ -13,6 +15,11 @@ import { CharactersDetailsComponentModule } from '../../../projects/team/src/lib
         {
           path: '',
           component: AboutUsPage,
+          children: [{ 
+            path: ':characterId', 
+            loadChildren: () => CharactersDetailsPageModule
+          }]
+          
         }
       ]),
   OurTeamComponentModule,

@@ -25,10 +25,6 @@ const routes: Routes = [{
         loadChildren: () => CharactersPageModule
       },
   { 
-        path: 'postacie/:name', 
-        loadChildren: () => CharactersDetailsPageModule
-      },
-  { 
         path: 'admin', 
         loadChildren: () => AdminPageModule
       }
